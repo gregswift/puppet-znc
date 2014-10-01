@@ -1,0 +1,11 @@
+AnonIPLimit = <%= @anon_ip_limit %>
+ConnectDelay = <%= @connect_delay %>
+<%- @load_modules.each do |mod| -%>
+LoadModule = <%= mod %>
+<%- end -%>
+MaxBufferSize = <%= @max_buffer_size %>
+ProtectWebSessions = <%= @protect_web_sessions %>
+SSLCertFile = <%= @ssl_cert_file %>
+ServerThrottle = <%= @server_throttle %>
+Skin = <%= @skin %>
+StatusPrefix = <%= @status_prefix %>
